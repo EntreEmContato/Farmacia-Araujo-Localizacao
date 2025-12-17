@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmácia Araújo</title>
+
+<style>
+    :root {
+        --green-main: #1e8f4f;
+        --green-dark: #166b3b;
+        --green-light: #e8f5ee;
+        --text-dark: #1f2933;
+        --white: #ffffff;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #ffffff 0%, #f2faf6 100%);
+        color: var(--text-dark);
+    }
+
+    .card {
+        background: var(--white);
+        border-radius: 20px;
+        padding: 30px 20px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        text-align: center;
+        max-width: 420px;
+        width: 90%;
+        border-top: 6px solid var(--green-main);
+    }
+
+    h1 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        color: var(--green-main);
+    }
+
+    p {
+        margin: 5px 0 15px;
+        font-size: 15px;
+        color: #4b5563;
+    }
+
+    .btn-big {
+        display: inline-block;
+        padding: 18px 25px;
+        background-color: var(--green-main);
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 15px;
+        font-size: 18px;
+        transition: 0.3s;
+        margin-bottom: 20px;
+    }
+
+    .btn-big:hover {
+        background-color: var(--green-dark);
+    }
+
+    iframe {
+        width: 100%;
+        height: 230px;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    .hours {
+        background: var(--green-light);
+        border-radius: 15px;
+        padding: 15px;
+        margin: 15px 0;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .hours h3 {
+        margin: 0 0 10px;
+        text-align: center;
+        font-size: 16px;
+        color: var(--green-dark);
+    }
+
+    .hour-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .hour-row span:first-child {
+        font-weight: bold;
+        color: var(--green-dark);
+    }
+
+    .hour-row span:last-child {
+        color: var(--text-dark);
+    }
+
+    .hour-row:last-child {
+        border-bottom: none;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btn-small {
+        padding: 14px 22px;
+        background-color: var(--green-main);
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 14px;
+        transition: 0.3s;
+    }
+
+    .btn-small:hover {
+        background-color: var(--green-dark);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Farmácia Araújo</h1>
+    <p>
+        R. José Eduardo Severiano - Lagoa de Santo Antonio<br>
+        Ararendá - CE, 62210-000
+    </p>
+
+    <!-- BOTÃO COM O LINK EXATO -->
+    <a class="btn-big"
+       href="https://www.google.com/maps/place/Farm%C3%A1cia+Ara%C3%BAjo/@-4.7126695,-40.6736109,17z/data=!3m1!4b1!4m6!3m5!1s0x7943300302e2235:0x71e613192d5d87f8!8m2!3d-4.7126695!4d-40.6736109!16s%2Fg%2F11vr56p_yg?entry=ttu"
+       target="_blank">
+       Abrir rota
+    </a>
+
+    <!-- MAPA SIMPLES (referência visual) -->
+    <iframe
+        src="https://maps.google.com/maps?q=Farmácia%20Araújo%20Ararendá%20CE&t=&z=17&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
+    </iframe>
+
+    <div class="hours">
+        <h3>Horário de funcionamento</h3>
+
+        <div class="hour-row">
+            <span>Segunda</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Terça</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Quarta</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Quinta</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Sexta</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Sábado</span><span>07:00–12:00 • 14:00–19:00</span>
+        </div>
+        <div class="hour-row">
+            <span>Domingo</span><span>07:00–12:00</span>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a class="btn-small"
+           href="https://wa.me/5588981947165"
+           target="_blank">
+           WhatsApp
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
